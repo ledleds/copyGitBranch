@@ -1,3 +1,3 @@
 chrome.browserAction.onClicked.addListener(function(tab) {
-  alert('Clicked!')
+  chrome.tabs.executeScript(null, {file: "copyBranchScript.js"})
 }
