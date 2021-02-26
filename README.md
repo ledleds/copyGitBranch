@@ -1,4 +1,4 @@
-# copyGitBranch 📋
+# 📋 CopyGitBranch 
 
 I wrote this small Chrome Extension for a very particular use case:
 
@@ -17,5 +17,7 @@ This will only work when you are viewing all files changed in a PR.
 Clone this repo.
 
 1. Visit `chrome://extensions/` in Google Chrome.
-2. Toggle `Developer Mode` to on in the top right hand corner.
+2. Toggle `Developer Mode` on in the top right hand corner.
 3. Click `Load unpacked` and navigate to where you have saved this repo.
+4. ????
+5. Profit
