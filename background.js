@@ -1,8 +1,10 @@
 chrome.browserAction.onClicked.addListener((tab) => {
-  chrome.tabs.executeScript(null, {file: "copyBranchScript.js"})
+  chrome.tabs.executeScript(null, {file: "copyBranchScript.js"}, () => {
+    setIcon();
+  });
 });
 
-chrome.browserAction.onClicked.addListener(() => {
+function setIcon() {
   chrome.browserAction.setIcon({
     path: { 48: "images/clippy128-tick.png" },
   });
@@ -11,4 +13,4 @@ chrome.browserAction.onClicked.addListener(() => {
     path: { 48: "images/clippy128-orange.png" },
   });
  }, 2000);
-});
+};
