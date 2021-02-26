@@ -1,5 +1,5 @@
 (() => {
-  const branchNameOuterDiv = document.querySelector("div.TableObject-item span[class='commit-ref css-truncate user-select-contain expandable head-ref']")
+  const branchNameOuterDiv = document.querySelector("span[class='commit-ref css-truncate user-select-contain expandable head-ref']")
   const branchNameOuterSpan = branchNameOuterDiv.getElementsByClassName('css-truncate-target');
   const branchName = branchNameOuterSpan[0].textContent
 
