@@ -11,9 +11,7 @@
   const branchNameOuterDiv = document.querySelector(
     "span[class='commit-ref css-truncate user-select-contain expandable head-ref']"
   );
-  const branchNameOuterSpan = branchNameOuterDiv.getElementsByClassName(
-    "css-truncate-target"
-  );
+  const branchNameOuterSpan = branchNameOuterDiv.getElementsByClassName("css-truncate-target");
   const branchName = branchNameOuterSpan[0].textContent;
 
   // Create new element
@@ -35,5 +33,6 @@
 
   // Remove temporary element
   document.body.removeChild(element);
+
   return branchName;
 })();
