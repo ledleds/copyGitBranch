@@ -1,10 +1,10 @@
 chrome.browserAction.onClicked.addListener((tab) => {
-  chrome.tabs.executeScript(null, {file: "copyBranchScript.js"}, () => {
-    setIcon();
+  chrome.tabs.executeScript(null, {file: "copyBranchScript.js"}, (result) => {
+    result[0] && showTickIcon();
   });
 });
 
-function setIcon() {
+function showTickIcon() {
   chrome.browserAction.setIcon({
     path: { 48: "images/clippy128-tick.png" },
   });
@@ -12,5 +12,5 @@ function setIcon() {
   setTimeout(() => { chrome.browserAction.setIcon({
     path: { 48: "images/clippy128-orange.png" },
   });
- }, 2000);
+ }, 1000);
 };

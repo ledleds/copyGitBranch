@@ -22,4 +22,6 @@
 
   // Remove temporary element
   document.body.removeChild(element);
+
+  return branchName;
 })();
