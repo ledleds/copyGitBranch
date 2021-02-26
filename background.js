@@ -1,6 +1,6 @@
 chrome.browserAction.onClicked.addListener((tab) => {
   chrome.tabs.executeScript(null, {file: "copyBranchScript.js"}, (result) => {
-    result[0] && showTickIcon();
+    result && result.length && result[0] !== null && showTickIcon();
   });
 });
 
